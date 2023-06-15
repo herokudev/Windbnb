@@ -20,14 +20,17 @@ function App() {
 
   // Este Hook te va a ejecutar la función getData cada vez que la página se renderice.
   useEffect(() => {
-     getData();
+    getData();
   }, []);
 
   // Puedes ver la variable data en consola.
   console.log(data);
   return (
     <>
-    {/* Aquí te dejo un ejemplo de cómo podrías imprimir varios elementos a la vez. */}
+      <h1 className=' text-lg text-cyan-400 font-extrabold'>
+        Hello Tailwind CSS
+      </h1>
+      {/* Aquí te dejo un ejemplo de cómo podrías imprimir varios elementos a la vez. */}
       {data.map((el, i) => {
         return <h1 key={i}>{el.city}</h1>;
       })}
