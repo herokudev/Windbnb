@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+import Locations from "./components/Locations";
 
 function App() {
   // La variable data es la que va a almacenar los datos de "stays.json" y setData nos ayudará a guardar esos datos en esa variable. Es necesario que inicialicemos esa variable como un array vacío para evitar errores.
@@ -24,16 +24,10 @@ function App() {
   }, []);
 
   // Puedes ver la variable data en consola.
-  console.log(data);
+  //console.log(data);
   return (
     <>
-      <h1 className=' text-lg text-cyan-400 font-extrabold'>
-        Hello Tailwind CSS
-      </h1>
-      {/* Aquí te dejo un ejemplo de cómo podrías imprimir varios elementos a la vez. */}
-      {data.map((el, i) => {
-        return <h1 key={i}>{el.city}</h1>;
-      })}
+      <Locations data={data} />
     </>
   );
 }
