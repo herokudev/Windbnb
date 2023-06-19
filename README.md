@@ -7,7 +7,7 @@ Airbnb clone front-end project do it with ReacJS and Tailwind CSS
 Below, we showcase screenshot of the app.
 
 <p align="center">
-    <img style="border: 1px solid black;" src="src/img/Screenshot2.png" width="700" alt="reset-status">
+    <img style="border: 1px solid black;" src="src/img/Screenshot3.png" width="700" alt="reset-status">
 </p>
 
 ## Built With
